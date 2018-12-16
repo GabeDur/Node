@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- <meta name="viewport" content="width=device-width, user-scalable=no initial-scale=1.0, maximum-scale=1.0 minimum-scale=1.0"> --><!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<title>Chat</title>
+	<link rel="stylesheet" href="css/basica2.css">
+	<style>
+	.contenido > div{
+		background: #bbb;
+		color: #fff;
+	}
+	header{
+		margin-top: 5px;
+	}
+	img{
+		margin-bottom: 10px;
+		width: 64px;
+		height: 64px;
+	}
+	textarea{
+		resize: none;
+		width: 100%;
+		max-width:100%;
+		padding-top: 5px;
+	}
+	.fecha_hora{
+		font-size: 13px;
+		margin-left: 15px;
+	}
+	</style>
+</head>
+<body>
+	<div class="container">
+	
+	
+		<!--header-->
+		<header class="row">
+			<div class="col text-center">
+				<h1>Chat <small>socket.oi</small></h1>
+				<hr>
+			</div>
+			
+		</header>
+		
+		<!--contenido-->
+		
+		<div class="row mb-2 justify-content-around">
+			<div class="col-sm-10 col-lg-7 ">
+				<div class="row justify-content-around" >
+					<div class="col-md-9" >
+						<form action="">
+							<textarea placeholder="Comentario..."></textarea>							
+						</form>
+					</div>
+					<div class="col-auto align-self-center">
+						<button class="btn btn-primary">Comentar</button>
+					</div>
+				</div>
+			</div>
+		</div>
+						
+						
+		<section class="row contenido justify-content-around">
+			<div class="col pb-3">
+				<div class="page-header">
+					<h1>Mensajes</h1>
+				</div>
+			<!--Primer mensaje-->
+				<div class="media">
+					<img class="mr-3" src="https://picsum.photos/64/64" alt=""/>
+					<div class="media-body">
+						<h4 class="mt-0 nombre">algr@men <span class="fecha_hora">00:00, Hoy</span></h4>
+						<p class="comentario">Responsive tables allow tables to be scrolled horizontally with ease. Make any table responsive across all viewports by wrapping a ... Responsive tables allow tables to be scrolled horizontally with ease. Make any table responsive across all viewports by wrapping a ... Responsive tables allow tables to be scrolled horizontally with ease. Make any table responsive across all viewports by wrapping a ...</p>
+						<div class="botones text-right">
+							<a class="btn btn-outline-primary btn-sm" href="#">Responder</a>
+							<a class="btn btn-outline-primary btn-sm" href="#">Editar</a>
+							<a class="btn btn-outline-primary btn-sm" href="#">Borrar</a>
+						</div>
+						<div class="media">
+							<img class="mr-3" src="https://picsum.photos/64/64" alt=""/>
+							<div class="media-body">
+								<h4 class="mt-0 nombre">algr@men <span class="fecha_hora">00:00, Hoy</span></h4>
+								<p class="comentario">Responsive tables allow tables to be scrolled horizontally with ease. Make any table table responsive across all viewports by wrapping a ... Responsive tables allow tables to be scrolled horizontally with ease. Make any table responsive across all viewports by wrapping a ... Responsive tables allow tables to be scrolled horizontally with ease. Make any table responsive across all viewports by wrapping a ...</p>
+								<div class="botones text-right">
+									<a class="btn btn-outline-primary btn-sm" href="#">Responder</a>
+									<a class="btn btn-outline-primary btn-sm" href="#">Editar</a>
+									<a class="btn btn-outline-primary btn-sm" href="#">Borrar</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<hr>
+			<!--Otro mensaje-->
+				<div class="media">
+					<img class="mr-3" src="https://picsum.photos/64/64" alt=""/>
+					<div class="media-body">
+						<h4 class="mt-0 nombre">algr@men <span class="fecha_hora">00:00, Hoy</span></h4>
+						<p class="comentario">Responsive tables allow tables to be scrolled horizontally with ease. Make any table responsive across all viewports by wrapping a ... Responsive tables allow tables to be scrolled horizontally with ease. Make any table responsive across all viewports by wrapping a ... Responsive tables allow tables to be scrolled horizontally with ease. Make any table responsive across all viewports by wrapping a ...</p>
+						<div class="botones text-right">
+							<a class="btn btn-outline-primary btn-sm" href="#">Responder</a>
+							<a class="btn btn-outline-primary btn-sm" href="#">Editar</a>
+							<a class="btn btn-outline-primary btn-sm" href="#">Borrar</a>
+						</div>
+						<div class="media">
+							<img class="mr-3" src="https://picsum.photos/64/64" alt=""/>
+							<div class="media-body">
+								<h4 class="mt-0 nombre">algr@men <span class="fecha_hora">00:00, Hoy</span></h4>
+								<p class="comentario">Responsive tables allow tables to be scrolled horizontally with ease. Make any table table responsive across all viewports by wrapping a ... Responsive tables allow tables to be scrolled horizontally with ease. Make any table responsive across all viewports by wrapping a ... Responsive tables allow tables to be scrolled horizontally with ease. Make any table responsive across all viewports by wrapping a ...</p>
+								<div class="botones text-right">
+									<a class="btn btn-outline-primary btn-sm" href="#">Responder</a>
+									<a class="btn btn-outline-primary btn-sm" href="#">Editar</a>
+									<a class="btn btn-outline-primary btn-sm" href="#">Borrar</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			
+			</div>
+		</section>
+
+
+
+		<!--fooder-->
+		<footer class="row">
+			<div class="col">
+				<h5>Derechos reservados</h5>
+			</div>
+		</footer>
+		
+		
+		
+	</div>
+	<!-- Optional JavaScript -->
+	<!-- jQuery first, then Popper.js, then Bootstrap JS
+	<script src="js/jquery-3.3.1.min.js"></script> 
+	<script src="js/popper.min.js"></script> 
+	<script src="js/bootstrap.min.js"></script> 
+	-->
+	
+</body>
+</html>

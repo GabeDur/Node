@@ -1,10 +1,10 @@
 var express = require('express');
 var app = express();
 
-/*Primer Forma*/
+/*Primer forma para poder usar archivos css*/
 //app.use(express.static('public'));
  
-/*Segunda Forma*/
+/*Segunda forma para poder usar archivos css*/
 app.use(express.static(__dirname + '/public'));
 
 

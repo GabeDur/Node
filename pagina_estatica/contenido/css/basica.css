@@ -1,0 +1,47 @@
+body{
+	background:#f0f3f5;
+	color: #fff;
+}
+header{
+	 background: #01aa85;
+	 padding: 20px;
+	 margin-bottom: 20px;
+	 border-radius: 10px;
+	 text-shadow: 1px 1px black;
+}
+.contenido{
+	margin-bottom: 20px;
+	
+}
+main{
+	background: #fff;
+	color: #424242;
+	padding: 20px 0;
+}
+aside{
+	background: #cfcfcf;
+	padding: 60px 0;
+	color: #0d47a1;
+	
+}
+.titulo{
+	text-align: center;
+}
+.redes{
+	background: #a2a2f2;
+	color: #424242;
+	margin-bottom: 20px;
+	padding: 5px;
+}
+.redes > div{
+	background: #2196f3;
+	color: #fff;
+}
+.redes > div > p{
+	margin: 0;
+	padding-bottom:2px;
+}
+footer{
+	background: #1e1e1e;
+	padding: 20px 0;
+}

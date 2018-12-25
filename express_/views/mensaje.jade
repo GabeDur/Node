@@ -1,0 +1,15 @@
+extends layout
+block content
+	section.row.justify-content-around
+		-if(mensaje)
+			div.col-md-10.alert.alert-success
+				p.text-justify
+					strong #{mensaje.mensaje}
+				p.text-right
+					a(href="/formulario").btn.btn-sm Regresar atrás
+		-else
+			div.col-md-10.alert.alert-danger
+				p.text-justify
+					strong Mensaje no encontrado
+				p.text-right
+					a(href="/formulario").btn.btn-sm Regresar atrás

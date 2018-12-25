@@ -1,3 +1,14 @@
 extends layout
 block content
-	p Welcome to Gabe
+	section.row.justify-content-around
+		div.col-9 
+			h3.encabezado Formulario con get y post
+			p.alert.alert-success Este ejercicio consta de un formulario que es llenado con un asunto y un mensaje, posteriormente se muestra una lista con enlaces al contenido de cada mensaje :).
+				br
+				a(href="/formulario").alert-link Ir al ejercicio
+			
+		div.col-9 
+			h3.encabezado Chat con soquet.io
+			p.alert.alert-success Este ejercicio consta de un chat :).
+				br
+				a(href="/chat").alert-link Ir al ejercicio

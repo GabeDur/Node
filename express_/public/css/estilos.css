@@ -1,23 +1,23 @@
 header {
 	background:#2c3e50;
 	color:#fff;
+	padding-top: 5px;
+	padding-bottom: 5px;
 }
-
-.main {
-	background:#f2f2f2;
+section{
+	background:#e9e9e9;
+	padding-top: 10px;
 }
-
-.color1 {
-	background: #34495e;
-	color:#fff;
-}
-
-aside {
-	background:#c0392b;
-	color:#fff;
-}
-
 footer {
 	background:#16a085;
 	color:#fff;
+	padding-top: 5px;
+	padding-bottom: 5px;
 }
+.encabezado{
+	background:#fff;
+	margin-bottom:0;
+	padding-bottom: 5px;
+	padding-left: 10px;
+}
+

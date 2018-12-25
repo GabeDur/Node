@@ -1,0 +1,19 @@
+extends layout
+block content
+	section.row.justify-content-around
+		div.col-md-7.alert-info.mb-3.pb-2
+			form(method="post", action="formulario")
+				div.form-group
+					label Asunto
+					input(type="text", placeholder="Asunto...", name="asunto", required).form-control
+				div.form-group
+					label Mensaje
+					textarea(type="text", placeholder="Mensaje...", name="mensaje", required).form-control
+				div.text-center
+					button(type="submit").btn.btn-outline-primary Enviar
+	section.row.justify-content-around
+		div.col-md-11
+			h3 Mensajes 
+				span.badge.badge-primary.badge-pill 0
+			ul
+				li hola!!

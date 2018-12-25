@@ -3,11 +3,18 @@ html
 	head
 	meta(charset="UTF-8")
 	meta(name="viewport", content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0")
-	title Express
+	title Ejercicios express
 	link(rel='stylesheet', href='/css/bootstrap.min.css')
 	link(rel='stylesheet', href='/css/estilos.css')
 	body
-	header 
-		div.container
-			h1 Header
+	header.row
+		div.col-1
+		div.col-8
+			h1= title
+		div.col-3.align-self-center
+			h4 
+				a(href="/").btn.btn-light Home
 	block content
+	footer
+		div.container
+			h3 Gabriel Duran

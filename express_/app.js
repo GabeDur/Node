@@ -3,25 +3,23 @@ var path = require('path');
 var indexRouter=require('./routes/index');
 var app = express();
 
-/*Primer forma para poder usar archivos css*/
-//app.use(express.static('public'));
- 
-/*Segunda forma para poder usar archivos css*/
+/*Usar archivos css*/
 app.use(express.static(__dirname + '/public'));
 
+//usar motor de platillas jade
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'jade');
 
+//para trabajar con los name de los formularios
+app.use(express.urlencoded({ extended: false }));
+
 app.use('/', indexRouter);
+
 
 app.get('/inicio', function(req, res){
 	res.send("<h1>Welcome to express</h1>");
 });
-/*
-app.get('/', function(req, res){
-	res.sendFile(__dirname + '/plantilla.html');
-});
-*/
+
 app.listen(5000, function(){
-	console.log("----server on----");
+	console.log("----server in port 5000----");
 });

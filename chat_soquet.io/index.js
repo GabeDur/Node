@@ -1,21 +1,16 @@
-var server = require('./server');
-var fs = require('fs');
+var express=require('express');
+var path=require('path');
+var servidor=require('./modules/servidor')
+var rutas=require('./modules/rutas');
+
+var app=express();
+
+servidor.levantar(app, express);
+
+rutas.servir(app, path);
 
 /*
-var server = http.createServer(function (req, res){
-	fs.readFile("./plantilla.html",  function(error, data){
-		res.writeHead(200, {'Content-Type' : 'text/html'});
-		res.end(data, "utf-8");
-		
-		console.log("*****************************");
-		console.log(data);
-		console.log("*****************************");
-		
-		});
-	}).listen(3000, "localhost");
-	
-console.log("escuchando");
-
+app.get('/', function(req, res){
+		res.send('hola');
+	});
 */
-
-server.iniserver();

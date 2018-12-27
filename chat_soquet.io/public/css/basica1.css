@@ -3,11 +3,14 @@ header{
 	 padding: 20px;
 	 margin-bottom: 20px;
 	 border-radius: 10px;
-	 text-shadow: 1px 1px black;
+	 
 	 margin-top: 5px;
 }
 footer{
 	background: #1e1e1e;
 	padding: 20px 0;
 	color: #fff;
+}
+.titulo{
+	text-shadow: 1px 1px black;
 }

@@ -8,6 +8,9 @@ function rutear(app, path){
 	app.get('/ver1', function(req, res){
 		res.sendFile(path.join(__dirname,'../pages/','ver1.html'));
 	});
+	app.get('/ver2', function(req, res){
+		res.sendFile(path.join(__dirname,'../pages/','ver2.html'));
+	});
 }
 
 exports.servir=rutear;

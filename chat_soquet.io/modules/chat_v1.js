@@ -7,7 +7,7 @@ function ver1(io){
 			conectados++;
 			//mensaje alert para el usuario que se conecto
 			socket.emit('message', 
-					{text : 'Te has conectado!'}
+					{text : 'Te has conectado correctamente!'}
 				);
 					
 			socket.emit('users',
@@ -16,6 +16,9 @@ function ver1(io){
 			//mensaje para todos los que estan conectados
 			socket.broadcast.emit('message',
 					{text:'un nuevo usuario se acaba de conectar'}
+				);
+			socket.broadcast.emit('users',
+					{ number:conectados}
 				);
 			
 			socket.on('disconnect', function(){

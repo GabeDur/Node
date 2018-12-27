@@ -16,19 +16,16 @@
 		<!--header-->
 		<header class="row">
 			<div class="col">
-				<h1 class="text-center titulo">Chat <small>socket.oi</small></h1>
+				<h1 class="text-center">Chat <small>socket.oi</small></h1>
 				<hr>
-				<div class="d-flex justify-content-between">
-					<a href="/" class="btn btn-dark btn-sm">Home</a>
-					<h5>Usuarios conectados: <span class="badge badge-info" id="conectados"></span></h5>
-				</div>
+				<a href="/" class="btn btn-dark btn-sm">Home</a>
 			</div>
 		</header>
 		
 		<!--contenido-->
 		<section class="row">
 			<div class="col">
-				<h1 class="text-center">Versión 2 del chat</h1>	
+				<h1 class="text-center">Versión 1 del chat</h1>	
 				<h3>¡¡Bienvenido!!</h3>	
 			</div>
 		</section>
@@ -44,15 +41,11 @@
 	<script src="/socket.io/socket.io.js"></script>
     <script>
     var socket=io.connect('http://127.0.0.1:3000');
-	var conectados=document.getElementById('conectados');
-	
     socket.on('message', function(data){
 		alert(data.text);
-		conectados.innerHTML = data.number;
     });
-	
 	socket.on('users', function(data){
-		conectados.innerHTML = data.number;
+		alert(data.number);
 	});
   </script>
 	

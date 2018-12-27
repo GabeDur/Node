@@ -41,6 +41,12 @@
 	<script src="/socket.io/socket.io.js"></script>
     <script>
     var socket=io.connect('http://127.0.0.1:3000');
+    socket.on('message', function(data){
+		alert(data.text);
+    });
+	socket.on('users', function(data){
+		alert(data.number);
+	});
   </script>
 	
 </body>
